@@ -20,8 +20,7 @@ case "$1" in
 	;;
 
 	bin/mes)
-		redo-ifchange ./mes-sources.list ../stage0/all.done
-		redo-ifchange $(cat ./mes-sources.list)
+		redo-ifchange ./mes-sources.list ./nyacc-sources.list ../stage0/all.done
 		date > "$3"
 	;;
 

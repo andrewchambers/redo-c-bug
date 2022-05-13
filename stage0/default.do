@@ -7,7 +7,7 @@ case "$1" in
 	;;
 
 	all.done)
-		redo-ifchange ./some-file.txt
+		redo-ifchange ./some-dir/some-file.txt
 		date > "$3"
 	;;
 
